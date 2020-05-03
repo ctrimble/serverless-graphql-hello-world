@@ -14,7 +14,7 @@ nvm use
 # install node modules
 npm install
 
-# build the typescript, create sam template, and start the api.
+# start the watch process, create sam template, and start the api.
 npm run start
 ```
 
@@ -28,11 +28,11 @@ npm run request
 
 ## Useful commands
 
+ * `npm run start`   calls watch, synth-sam, and start-api
+ * `npm run request` an example API request to test the stack
  * `npm run build`   compile typescript to js
  * `npm run watch`   watch for changes and compile
  * `npm run test`    perform the jest unit tests
- * `npm run synth`   synth a SAM template for SAM local to use
+ * `npm run synth-sam` synth a SAM template for SAM local to use
  * `npm run start-api` start SAM local api
- * `npm run request` an example API request to test the stack
- * `npm run start`   calls build, synth, and start-api
 
