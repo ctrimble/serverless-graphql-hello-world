@@ -1,19 +1,9 @@
 import {
-  GraphQLSchema,
-  GraphQLObjectType,
-  GraphQLString,
+  buildSchema
 } from 'graphql';
 
-export default new GraphQLSchema({
-  query: new GraphQLObjectType({
-    name: 'Hello',
-    fields: {
-      hello: {
-        type: GraphQLString,
-        resolve() {
-          return 'world';
-        },
-      },
-    },
-  }),
-});
+export default buildSchema(`
+  type Query {
+    hello: String
+  }
+`);
