@@ -6,7 +6,7 @@ export class HelloWorldStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
     const handler = new lambda.Function(this, 'hello-world-endpoint', {
-      runtime: lambda.Runtime.NODEJS_10_X,
+      runtime: lambda.Runtime.NODEJS_12_X,
       handler: 'handler.handler',
       code:    lambda.Code.fromAsset("dist")
     });

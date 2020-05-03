@@ -7,3 +7,6 @@ dist
 # CDK asset staging directory
 .cdk.staging
 cdk.out
+
+# SAM local
+template.yaml
