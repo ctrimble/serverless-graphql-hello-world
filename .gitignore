@@ -1,0 +1,9 @@
+# NodeJS
+node_modules
+
+# Typescript
+dist
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
