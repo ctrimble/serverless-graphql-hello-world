@@ -23,13 +23,14 @@ npm run start
 In a different terminal, execute this command to make a request to the api.
 
 ```
-npm run request
+npm run request-hello
 ```
 
 ## Useful commands
 
  * `npm run start`   calls watch, synth-sam, and start-api
- * `npm run request` an example API request to test the stack
+ * `npm run request-hello` an example API request to test the stack
+ * `npm run request-goodbye` a second API request to test the stack
  * `npm run build`   compile typescript to js
  * `npm run watch`   watch for changes and compile
  * `npm run test`    perform the jest unit tests
