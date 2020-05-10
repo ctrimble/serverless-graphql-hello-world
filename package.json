@@ -10,7 +10,8 @@
     "start": "concurrently -k \"npm:watch\" \"npm-run-all -s synth-sam start-api\"",
     "synth-sam": "npm -s run cdk synth -- --no-staging > template.yaml",
     "start-api": "sam local start-api --debug",
-    "request": "curl -X POST -H \"Content-Type: application/json\" -d '{\"query\": \"{ hello }\"}' http://localhost:3000"
+    "request-hello": "curl -X POST -H \"Content-Type: application/json\" -d '{\"query\": \"{ hello }\"}' http://localhost:3000",
+    "request-goodbye": "curl -X POST -H \"Content-Type: application/json\" -d '{\"query\": \"{ goodbye }\"}' http://localhost:3000"
   },
   "devDependencies": {
     "@aws-cdk/assert": "1.36.1",

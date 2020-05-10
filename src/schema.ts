@@ -4,6 +4,7 @@ import {
 
 export default buildSchema(`
   type Query {
-    hello: String
+    hello: String,
+    goodbye: String
   }
 `);
